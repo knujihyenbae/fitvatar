@@ -9,7 +9,11 @@
         android:id="@+id/bodysizeFragment"
         android:name="com.godlifegoodlife.fitvatar.BodysizeFragment"
         android:label="fragment_bodysize"
-        tools:layout="@layout/fragment_bodysize" />
+        tools:layout="@layout/fragment_bodysize" >
+        <action
+            android:id="@+id/action_bodysizeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.godlifegoodlife.fitvatar.HomeFragment"
@@ -19,20 +23,24 @@
             android:id="@+id/action_homeFragment_to_fitvatarFragment"
             app:destination="@id/fitvatarFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_mypageFragment"
-            app:destination="@id/mypageFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_shoppingmallFragment"
             app:destination="@id/shoppingmallFragment" />
         <action
             android:id="@+id/action_homeFragment_to_bodysizeFragment"
             app:destination="@id/bodysizeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mypageFragment"
+            app:destination="@id/mypageFragment" />
     </fragment>
     <fragment
         android:id="@+id/fitvatarFragment"
         android:name="com.godlifegoodlife.fitvatar.FitvatarFragment"
         android:label="fragment_fitvatar"
-        tools:layout="@layout/fragment_fitvatar" />
+        tools:layout="@layout/fragment_fitvatar" >
+        <action
+            android:id="@+id/action_fitvatarFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/shoppingmallFragment"
         android:name="com.godlifegoodlife.fitvatar.ShoppingmallFragment"
@@ -43,13 +51,4 @@
         android:name="com.godlifegoodlife.fitvatar.MypageFragment"
         android:label="fragment_mypage"
         tools:layout="@layout/fragment_mypage" />
-    <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.godlifegoodlife.fitvatar.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
-        <action
-            android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
 </navigation>

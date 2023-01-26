@@ -5,7 +5,9 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -48,9 +50,10 @@
             android:background="#10113C"
             app:layout_constraintTop_toBottomOf="@+id/bodysize">
             <TextView
+                android:id="@+id/fitvatar_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" > FIT VATAR"
+                android:text="FIT VATAR"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
@@ -74,11 +77,44 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fitvatarmaker"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/fitvatar"
+            >
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fitvatarmaker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FIT VATA MAKER"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/shoppingmall"
             android:layout_width="match_parent"
             android:layout_height="206dp"
             android:background="#e9f9a8"
-            app:layout_constraintTop_toBottomOf="@+id/fitvatar"
+            app:layout_constraintTop_toBottomOf="@+id/fitvatarmaker"
             tools:layout_editor_absoluteX="2dp">
 
             <TextView
@@ -107,6 +143,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
+</ScrollView>
 
 </FrameLayout>
