@@ -9,21 +9,103 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
-
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bodysize"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="HOME"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            android:layout_height="200dp"
+            android:background="#F5F5F5"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/model"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BODYSIZE >"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fitvatar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#10113C"
+            app:layout_constraintTop_toBottomOf="@+id/bodysize">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" > FIT VATAR"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+            </TextView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/avatarmodel"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/shoppingmall"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Shoppingmall"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            android:layout_height="206dp"
+            android:background="#e9f9a8"
+            app:layout_constraintTop_toBottomOf="@+id/fitvatar"
+            tools:layout_editor_absoluteX="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="SHOPPINGMALL > "
+                android:textColor="#DE4430"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shoppingmodel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

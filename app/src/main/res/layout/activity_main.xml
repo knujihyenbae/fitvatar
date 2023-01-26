@@ -12,9 +12,11 @@
         android:layout_height="48dp"
         app:layout_constraintTop_toTopOf="parent">
         <TextView
+            android:id="@+id/topbartitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FITVATAR"
+            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textAlignment="center"
@@ -39,38 +41,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottombar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        app:layout_constraintBottom_toBottomOf="parent">
-        <ImageView
-            android:id="@+id/bottombar_shoppingmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_foreground"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/bottombar_home"/>
-        <ImageView
-            android:id="@+id/bottombar_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_foreground"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/bottombar_shoppingmall"
-            app:layout_constraintEnd_toStartOf="@+id/bottombar_mypage"/>
-        <ImageView
-            android:id="@+id/bottombar_mypage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_foreground"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/bottombar_home"
-            app:layout_constraintEnd_toEndOf="parent"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

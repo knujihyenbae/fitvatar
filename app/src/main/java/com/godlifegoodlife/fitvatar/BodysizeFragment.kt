@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.godlifegoodlife.fitvatar.databinding.FragmentBodysizeBinding
@@ -30,7 +31,27 @@ class BodysizeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-            //Navigation.findNavController(view).navigate(R.id.action_bodysizeFragment_to_homeFragment)
+        //완료버튼
+        binding.bodysizeFinish.setOnClickListener(){
+
+        }
+
+        binding.detailInfo.visibility = View.INVISIBLE
+
+        var ischecked = 1
+        binding.detailInfoToggle.setOnClickListener(){
+            //ImageView.ROTATION
+
+            if(ischecked == 1){
+                binding.detailInfo.visibility = View.VISIBLE
+                ischecked = 2
+
+            }else{
+                binding.detailInfo.visibility = View.INVISIBLE
+                ischecked = 1
+            }
+
+        }
 
     }
 

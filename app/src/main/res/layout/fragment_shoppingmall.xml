@@ -3,12 +3,110 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ShoppingmallFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="SHOPPINGMALL" />
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/shoppingmall_1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#000000"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/shoppingmall_1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z\nI\nG\nZ\nA\nG"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </TextView>
+            <ImageView
+                android:id="@+id/shoppingmall_1_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zigzag"
+                android:layout_marginStart="48dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/shoppingmall_1_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/shoppingmall_2"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@+id/shoppingmall_1">
+            <TextView
+                android:id="@+id/shoppingmall_2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A\nB\nL\nY"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </TextView>
+            <ImageView
+                android:id="@+id/shoppingmall_2_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ably"
+                android:layout_marginStart="48dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/shoppingmall_2_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/shoppingmall_3"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@+id/shoppingmall_2">
+            <TextView
+                android:id="@+id/shoppingmall_3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M\nU\nS\nI\nN\nS\nA"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </TextView>
+            <ImageView
+                android:id="@+id/shoppingmall_3_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/musinsa"
+                android:layout_marginStart="48dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/shoppingmall_3_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </FrameLayout>

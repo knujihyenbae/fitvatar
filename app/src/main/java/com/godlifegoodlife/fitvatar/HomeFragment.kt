@@ -28,9 +28,17 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.bodysize.setOnClickListener(){
+            Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_bodysizeFragment)
+        }
         binding.shoppingmall.setOnClickListener(){
             Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_shoppingmallFragment)
         }
+        binding.fitvatar.setOnClickListener(){
+            Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_fitvatarFragment)
+
+        }
+
     }
 
 

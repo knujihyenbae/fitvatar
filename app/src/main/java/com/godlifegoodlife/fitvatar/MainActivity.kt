@@ -16,15 +16,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.bottombarShoppingmall.setOnClickListener(){
-
-        }
-        binding.bottombarHome.setOnClickListener(){
-
-        }
-        binding.bottombarMypage.setOnClickListener(){
-
-        }
 
     }
 }
