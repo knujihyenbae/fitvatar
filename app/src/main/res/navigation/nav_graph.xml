@@ -11,8 +11,8 @@
         android:label="fragment_bodysize"
         tools:layout="@layout/fragment_bodysize" >
         <action
-            android:id="@+id/action_bodysizeFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_bodysizeFragment_to_lodingFragment"
+            app:destination="@id/lodingFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -51,4 +51,13 @@
         android:name="com.godlifegoodlife.fitvatar.MypageFragment"
         android:label="fragment_mypage"
         tools:layout="@layout/fragment_mypage" />
+    <fragment
+        android:id="@+id/lodingFragment"
+        android:name="com.godlifegoodlife.fitvatar.LodingFragment"
+        android:label="fragment_loding"
+        tools:layout="@layout/fragment_loding" >
+        <action
+            android:id="@+id/action_lodingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

@@ -33,7 +33,7 @@ class BodysizeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         //완료버튼
         binding.bodysizeFinish.setOnClickListener(){
-
+            Navigation.findNavController(view).navigate(R.id.action_bodysizeFragment_to_lodingFragment)
         }
 
         binding.detailInfo.visibility = View.INVISIBLE
